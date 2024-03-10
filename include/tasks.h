@@ -4,7 +4,7 @@
 
 
 double earthAndRope(double ROPE_LENGTH);
-double poolCost(double POOL_RADIUS, double ROAD_WIDTH, 
-	double CONCRETE_COST, double FENCE_COST);
+double poolCost(double POOL_RADIUS, double ROAD_WIDTH,
+    double CONCRETE_COST, double FENCE_COST);
 
 #endif // INCLUDE_TASKS_H_

@@ -132,7 +132,8 @@ TEST(PoolCostTests, PoolRadius) {
     double concreteArea = poolWithRoad.getArea() - pool.getArea();
     double fenceFerence = poolWithRoad.getFerence();
 
-    EXPECT_EQ(poolCost(), concreteArea * concreteCost + fenceFerence * fenceCost);
+    EXPECT_EQ(poolCost(), concreteArea * concreteCost +
+        fenceFerence * fenceCost);
 }
 
 TEST(PoolCostTests, CustomParameters) {
