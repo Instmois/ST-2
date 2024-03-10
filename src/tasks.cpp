@@ -3,11 +3,7 @@
 #include "circle.h"
 
 const double EARTH_RADIUS = 6378.1 * 1000;
-const double ROPE_LENGTH = 1;
-const double POOL_RADIUS = 3;
-const double ROAD_WIDTH = 1;
-const double CONCRETE_COST = 1000;
-const double FENCE_COST = 2000;
+
 
 double earthAndRope(double ROPE_LENGTH) {
     Circle earth(EARTH_RADIUS);
