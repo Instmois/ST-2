@@ -20,7 +20,6 @@ double poolCost(double POOL_RADIUS, double ROAD_WIDTH,
     double CONCRETE_COST, double FENCE_COST) {
     Circle pool(POOL_RADIUS);
     Circle poolWithRoad(pool.getRadius() + ROAD_WIDTH);
-
     double concreteArea = poolWithRoad.getArea() - pool.getArea();
     double fenceFerence = poolWithRoad.getFerence();
 
