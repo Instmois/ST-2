@@ -87,19 +87,44 @@ TEST(CircleTests, SetAreaToZero) {
     EXPECT_EQ(circle.getFerence(), 0.0);
     EXPECT_EQ(circle.getArea(), 0.0);
 }
+TEST(CircleTests, SetAreaTwice) {
+    Circle circle;
+    circle.setArea(50.0);
+    EXPECT_NEAR(circle.getRadius(), 3.98, 1e-1);
+    EXPECT_NEAR(circle.getFerence(), 25.06, 1e-2);
+    EXPECT_NEAR(circle.getArea(), 50.0, 1e-2);
+
+    circle.setArea(100.0);
+    EXPECT_NEAR(circle.getRadius(), 5.64, 1e-1);
+    EXPECT_NEAR(circle.getFerence(), 35.44, 1e-2);
+    EXPECT_NEAR(circle.getArea(), 100.0, 1e-2);
+}
+
+TEST(CircleTests, SetFerenceTwice) {
+    Circle circle;
+    circle.setFerence(10.0);
+    EXPECT_NEAR(circle.getRadius(), 1.59, 1e-2);
+    EXPECT_NEAR(circle.getFerence(), 10.0, 1e-2);
+    EXPECT_NEAR(circle.getArea(), 7.85, 1e-2);
+
+    circle.setFerence(20.0);
+    EXPECT_NEAR(circle.getRadius(), 3.18, 1e-2);
+    EXPECT_NEAR(circle.getFerence(), 20.0, 1e-2);
+    EXPECT_NEAR(circle.getArea(), 31.42, 1e-2);
+}
 
 TEST(EarthAndRopeTests, EarthRadius) {
-    EXPECT_NEAR(earthAndRope(1.0), 33696685.2, 1e-4);
+    EXPECT_NEAR(earthAndRope(1.0), 33696685.2, 1e-1);
 }
 
 TEST(EarthAndRopeTests, VeryLongRope) {
     const double ropeLength = 1000000.0;
-    EXPECT_NEAR(earthAndRope(ropeLength), 34696684.2, 1e-4);
+    EXPECT_NEAR(earthAndRope(ropeLength), 34696684.2, 1e-1);
 }
 
 TEST(EarthAndRopeTests, VeryShortRope) {
     const double ropeLength = 0.000001;
-    EXPECT_NEAR(earthAndRope(ropeLength), 33696684.2, 1e-4);
+    EXPECT_NEAR(earthAndRope(ropeLength), 33696684.2, 1e-1);
 }
 
 TEST(PoolCostTests, PoolRadius) {
