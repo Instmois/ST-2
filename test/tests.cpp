@@ -9,6 +9,7 @@ TEST(CircleTests, DefaultConstructor) {
     EXPECT_EQ(circle.getFerence(), 0.0);
     EXPECT_EQ(circle.getArea(), 0.0);
 }
+
 TEST(CircleTests, SetRadius) {
     Circle circle;
     circle.setRadius(5.0);

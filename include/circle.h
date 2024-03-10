@@ -10,7 +10,6 @@ class Circle {
 
 	public:
 		Circle(double radius = 0.0);
-
 		void setRadius(double radius);
 		void setFerence(double ference);
 		void setArea(double area);
