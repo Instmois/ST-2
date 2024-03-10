@@ -105,12 +105,12 @@ TEST(CircleTests, SetFerenceTwice) {
     circle.setFerence(10.0);
     EXPECT_NEAR(circle.getRadius(), 1.59, 1e-2);
     EXPECT_NEAR(circle.getFerence(), 10.0, 1e-2);
-    EXPECT_NEAR(circle.getArea(), 7.85, 1e-2);
+    EXPECT_NEAR(circle.getArea(), 7.95, 1e-2);
 
     circle.setFerence(20.0);
     EXPECT_NEAR(circle.getRadius(), 3.18, 1e-2);
     EXPECT_NEAR(circle.getFerence(), 20.0, 1e-2);
-    EXPECT_NEAR(circle.getArea(), 31.42, 1e-2);
+    EXPECT_NEAR(circle.getArea(), 31.83, 1e-2);
 }
 
 TEST(EarthAndRopeTests, EarthRadius) {
@@ -146,6 +146,6 @@ TEST(PoolCostTests, CustomParameters) {
     const double roadWidth = 0.5;
     const double concreteCost = 800.0;
     const double fenceCost = 1500.0;
-    EXPECT_EQ(poolCost(poolRadius, roadWidth, concreteCost, fenceCost),
-        35185.8);
+    EXPECT_NEAR(poolCost(poolRadius, roadWidth, concreteCost, fenceCost),
+        35185.8, 1e-1);
 }
