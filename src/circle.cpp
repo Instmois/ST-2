@@ -1,7 +1,8 @@
 // Copyright 2024 Moiseev Nikita
-#include <cstdint>
 #include <math.h>
 #include "circle.h"
+#include <cstdint>
+
 
 const double Circle::PI = std::atan(1.0) * 4;
 

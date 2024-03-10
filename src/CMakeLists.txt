@@ -23,6 +23,7 @@ install(TARGETS ${PROJECT_NAME}
         LIBRARY DESTINATION "${lib_dest}"
     ARCHIVE DESTINATION "${lib_dest}"
     COMPONENT library)
+
 install(TARGETS ${PROJECT_NAME}.info
         RUNTIME DESTINATION "${tool_dest}"
     COMPONENT library)
