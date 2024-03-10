@@ -20,5 +20,4 @@ public:
     double getArea() const;
 };
 
-
 #endif  // INCLUDE_CIRCLE_H_

@@ -1,5 +1,4 @@
 // Copyright 2024 Moiseev Nikita
-
 #include "tasks.h"
 #include "circle.h"
 
@@ -18,7 +17,7 @@ double earthAndRope(double ROPE_LENGTH) {
 }
 
 
-double poolCost() {
+double poolCost(double POOL_RADIUS, double ROAD_WIDTH, double CONCRETE_COST, double FENCE_COST) {
     Circle pool(POOL_RADIUS);
     Circle poolWithRoad(pool.getRadius() + ROAD_WIDTH);
 
