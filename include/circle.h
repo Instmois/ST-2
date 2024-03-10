@@ -2,6 +2,7 @@
 #ifndef INCLUDE_CIRCLE_H_
 #define INCLUDE_CIRCLE_H_
 #include <cstdint>
+
 class Circle {
 private:
     double radius;
@@ -10,6 +11,7 @@ private:
 
 public:
     explicit Circle(double radius = 0.0);
+
     void setRadius(double radius);
     void setFerence(double ference);
     void setArea(double area);

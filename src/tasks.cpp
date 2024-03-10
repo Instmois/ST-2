@@ -4,7 +4,6 @@
 
 const double EARTH_RADIUS = 6378.1 * 1000;
 
-
 double earthAndRope(double ROPE_LENGTH) {
     Circle earth(EARTH_RADIUS);
     double newFerence = earth.getFerence() + ROPE_LENGTH;
