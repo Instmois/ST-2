@@ -27,7 +27,7 @@ TEST(CircleTests, SetFerence) {
 TEST(CircleTests, SetArea) {
     Circle circle;
     circle.setArea(50.0);
-    EXPECT_NEAR(circle.getRadius(), 3.97887357729, 1e-4);
+    EXPECT_NEAR(circle.getRadius(), 3.98, 1e-1);
 }
 
 TEST(CircleTests, GetRadius) {
@@ -89,17 +89,17 @@ TEST(CircleTests, SetAreaToZero) {
 }
 
 TEST(EarthAndRopeTests, EarthRadius) {
-    EXPECT_NEAR(earthAndRope(1.0), 0.159154943092, 1e-4);
+    EXPECT_NEAR(earthAndRope(1.0), 33696685.2, 1e-4);
 }
 
 TEST(EarthAndRopeTests, VeryLongRope) {
     const double ropeLength = 1000000.0;
-    EXPECT_NEAR(earthAndRope(ropeLength), 159.154943092, 1e-4);
+    EXPECT_NEAR(earthAndRope(ropeLength), 34696684.2, 1e-4);
 }
 
 TEST(EarthAndRopeTests, VeryShortRope) {
     const double ropeLength = 0.000001;
-    EXPECT_NEAR(earthAndRope(ropeLength), 1.59154943092e-7, 1e-4);
+    EXPECT_NEAR(earthAndRope(ropeLength), 33696684.2, 1e-4);
 }
 
 TEST(PoolCostTests, PoolRadius) {

@@ -11,7 +11,6 @@ double earthAndRope(double ROPE_LENGTH) {
     return earth2.getRadius() - earth.getRadius();
 }
 
-
 double poolCost(double POOL_RADIUS, double ROAD_WIDTH,
     double CONCRETE_COST, double FENCE_COST) {
     Circle pool(POOL_RADIUS);
